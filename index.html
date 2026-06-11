@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekologi Dalam Al-Qur’an - E-Book</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f4f6f4;
+        }
+        header {
+            background-color: #1b4332;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: #2d6a4f;
+            color: white;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #ffffff;
+            min-width: 280px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .dropdown-content a {
+            color: #333333;
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 0.85rem;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .dropdown-content a:hover {
+            background-color: #d8f3dc;
+            color: #1b4332;
+        }
+        .dropdown-content .heading-1 {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            color: #1b4332;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .nav-home {
+            background-color: #40916c;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+            border-radius: 4px;
+        }
+        .nav-home:hover {
+            background-color: #52b788;
+        }
+        iframe {
+            flex: 1;
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ekologi Dalam Al-Qur’an</h1>
+        <nav>
+            <a href="cover.html" target="content-frame" class="nav-home">Homepage / Cover</a>
+            
+            <!-- Menu Dropdown 1: Daftar Isi -->
+            <div class="dropdown">
+                <button class="dropbtn">Daftar Isi / Bab ▾</button>
+                <div class="dropdown-content">
+                    <a href="kata_pengantar.html" target="content-frame">Kata Pengantar</a>
+                    
+                    <a class="heading-1">BAB 1: Prinsip Dasar</a>
+                    <a href="bab1.html" target="content-frame">A. Prinsip Dasar Etika Lingkungan dalam Islam</a>
+                    
+                    <a class="heading-1">BAB 2: Pengelolaan SDA</a>
+                    <a href="bab2.html" target="content-frame">B. Etika Pemanfaatan dan Pengelolaan Sumber Daya Alam</a>
+                    
+                    <a class="heading-1">BAB 3: Kebersihan</a>
+                    <a href="bab3.html" target="content-frame">C. Kebersihan Lingkungan sebagai Bagian dari Iman</a>
+                    
+                    <a class="heading-1">BAB 4: Perlindungan MH</a>
+                    <a href="bab4.html" target="content-frame">D. Etika Perlindungan Makhluk Hidup</a>
+                    
+                    <a class="heading-1">BAB 5: Keberlanjutan</a>
+                    <a href="bab5.html" target="content-frame">E. Spirit Keberlanjutan dan Kesakralan Alam</a>
+                    
+                    <a href="profil_sinopsis.html" target="content-frame">Profil & Sinopsis</a>
+                </div>
+            </div>
+
+            <!-- Menu Dropdown 2: Review Website (Baru) -->
+            <div class="dropdown">
+                <button class="dropbtn">Review Website ▾</button>
+                <div class="dropdown-content">
+                    <a href="review1.pdf" target="content-frame">Review Website 1</a>
+                    <a href="review2.pdf" target="content-frame">Review Website 2</a>
+                    <a href="review3.pdf" target="content-frame">Review Website 3</a>
+                    <a href="review4.pdf" target="content-frame">Review Website 4</a>
+                    <a href="review5.pdf" target="content-frame">Review Website 5</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <iframe src="cover.html" name="content-frame"></iframe>
+
+</body>
+</html>
